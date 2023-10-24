@@ -1,0 +1,224 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Brygada+1918:wght@600&family=Poppins:wght@100;200;300;500;700&display=swap');
+
+#diet-label, #ingrediente, #health-label{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    padding: 20px;
+    color: rgb(197, 196, 196);
+}
+
+body{
+   background-image: url("../assets/pizarra.jpeg"); 
+}
+
+#title{
+    font-family: 'Brygada';
+    font-size: 30px;
+    background-image: url("../assets/pizarra.jpeg");
+    text-align: center;
+    padding: 20px;
+    font-size: 60px;
+    color: rgb(197, 196, 196);
+}
+
+#diet-label, #ingrediente, #health-label{
+    font-size: 24px;
+}
+
+#recipe-results{
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+    color: rgb(36, 36, 36);
+}
+
+#recipe-form{
+    display: flex;
+    flex-direction: column;
+    background-image: url("../assets/pizarra.jpeg");
+}
+
+img:hover{
+    cursor: pointer;
+}
+
+#ingrediente, #diet-label, #health-label{
+    text-align: center;
+}
+
+#ingredient, #diet, #health{
+    width: 60%;
+    /* justify-content: center;
+    align-items: center;
+    text-align: center; */
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins',sans-serif;
+    text-align: center;
+
+}
+
+#buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+#button1, #clear-elements, #show-favorites-button {
+    margin:auto;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    width: 35%;
+    font-family: 'Poppins',sans-serif;
+}
+
+.recipe-item{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(205, 205, 205);
+    margin: auto;
+    border-radius: 10px;
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+.recipe-image{
+    
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    width: 80%;
+    margin: 20px auto;
+}
+
+
+.recipe-label{
+    margin: auto;
+    padding: 20px 20px 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+}
+
+.li-favorites{
+    margin: auto;
+    padding: 20px 20px 10px 20px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 600;
+    text-align: center;
+    color: rgb(197, 196, 196);
+}
+
+.li-favorites:hover{
+    cursor: pointer;
+    color: rgb(255, 254, 254);
+}
+
+ul{
+    margin-bottom: 40px;
+}
+
+.recipe-diet, .recipe-health, .recipe-calories{
+    margin: auto;
+    padding: 10px;
+    font-family: 'Poppins',sans-serif;
+    font-weight: 100;
+}   
+
+.recipe-calories{
+    padding-bottom: 20px;
+}
+
+#calories-range{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(197, 196, 196);
+    width: 30%;
+    margin: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+
+#calories{
+    width: 70%;
+    margin: 20px auto;
+}
+
+#selectedCalories{
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.favorite{
+    width: 30px;
+    padding: 20px 0px 20px 20px;
+}
+
+/* -------PAGINA CLICK RECETA------- */
+
+#recipe-details{
+    display: flex;
+    flex-direction: column;
+    background: rgb(197, 196, 196);
+}
+
+.h2-recipe{
+    margin-top: 20px;
+    font-family: 'Poppins',sans-serif;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.img-recipe{
+    width: 60%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+.li-recipe{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+    font-size: 18px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.url-recipe{
+    text-align: center;
+    font-family: 'Poppins',sans-serif;
+    padding: 20px 0 20px 0;
+}
+
+.diet-recipe{
+    font-family: 'Poppins',sans-serif;
+    font-weight: 200;
+    text-align: center;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+@media screen and (min-width: 768px){
+
+    #recipe-results{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+
+    #buttons{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .recipe-item {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+      }
+}

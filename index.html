@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECIPEDIA</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <h1 id="title">RECIPEDIA</h1>
+    <form id="recipe-form">
+        <label for="ingredient" id="ingrediente">Main Ingredient:</label>
+            <input type="text" id="ingredient">
+        <label for="diet" id="diet-label">Choose a diet:</label>
+            <select id="diet" name="diet-type">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="balanced">Balanced</option>
+            <option value="high-fiber">High-fiber</option>
+            <option value="high-protein">High-protein</option>
+            <option value="low-carb">Low-carb</option>
+            <option value="low-fat">Low-fat</option>
+            <option value="low-sodium">Low-sodium</option>
+            </select>
+        <label for="health" id="health-label">Choose a health label:</label>
+            <select id="health" name="health-type">
+            <option disabled selected value> -- select an option -- </option>
+            <option value="gluten-free">Gluten Free</option>
+            <option value="shellfish-free">Shellfish Free</option>
+            <option value="peanut-free">Peanut Free</option>
+            <option value="vegan">Vegan</option>
+            <option value="vegetarian">Vegetarian</option>
+            <option value="low-sodium">Low-sodium</option>
+            </select>
+            <div id="calories-range">
+            <input type="range" id="calories" name="calories" min="100" max="5000" step="100" value="100">
+            <span id="selectedCalories"> 0 calories </span>
+            </div>
+        <div id="buttons">
+        <button type="submit" id="button1">Search Recipes</button>
+        <button type="button" id="clear-elements">Refresh</button>
+        </div>
+        <button id="show-favorites-button" type="button">Show Favorites</button>
+    </form>
+    <section id="recipe-results"></section>
+
+    <section id="recipe-details">
+    </section>
+    <ul id="favorite-recipes-list">
+        
+    </ul>
+    <script src="./js/script.js"></script>
+</body>
+</html>
