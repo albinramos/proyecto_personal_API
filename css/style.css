@@ -19,13 +19,13 @@ body{
     text-align: center;
     padding: 20px;
     font-size: 60px;
-    color: #C5C4C4;
+    color: #2f8cfd;
     
 }
 
 #diet-label, #ingrediente, #health-label{
     font-size: 24px;
-    color: #C5C4C4;
+    color: #2f8cfd;
 }
 
 #recipe-results{
@@ -76,6 +76,24 @@ img:hover{
     font-family: 'Poppins',sans-serif;
 }
 
+#button1:hover{
+    cursor: pointer;
+    background-color: #2f8cfd;
+    color:#C5C4C4;
+}
+
+#clear-elements:hover{
+    cursor: pointer;
+    background-color: #2f8cfd;
+    color:#C5C4C4;
+}
+
+#show-favorites-button:hover{
+    cursor: pointer;
+    background-color: #2f8cfd;
+    color:#C5C4C4;
+}
+
 .recipe-item{
     display: flex;
     flex-direction: column;
@@ -118,7 +136,7 @@ img:hover{
 
 .li-favorites:hover{
     cursor: pointer;
-    color: rgb(255, 254, 254);
+    color: #2f8cfd;
 }
 
 ul{
