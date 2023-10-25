@@ -96,7 +96,6 @@ function displayRecipes(recipes) {
             const recipeHealth = document.getElementById('health').value;
             const recipeCalories = recipeApi.recipe.calories;
 
-            console.log(recipeApi);
             // 4.3. Crear elementos para mostrar los datos en la receta
             const imageElement = document.createElement('img');
             imageElement.className = 'recipe-image';
